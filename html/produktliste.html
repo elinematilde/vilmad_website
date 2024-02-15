@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktliste</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>The Mushroom lexicon</h1>
+        <div class="choose-cat">
+            <div class="flexbox">
+                <img style="height: auto; width: 10%; transform: scaleX(-1);" src="https://pngimg.com/d/pin_PNG64.png"
+                    alt="">
+                <img style="height: auto; width: 10%; " src="https://pngimg.com/d/pin_PNG64.png" alt="">
+                <div class="flexbox">
+                    <form action="">
+                        <label for="season">Seasons</label>
+                        <select id="season" type="select">
+                            <option value="winter">Winter</option>
+                            <option value="spring">Spring</option>
+                            <option value="summer">Summer</option>
+                            <option value="fall">Autumn</option>
+                        </select>
+                    </form>
+                    <form action="">
+                        <label for="month">Month</label>
+                        <select id="month" type="select">
+                            <option onclick="test()" value="0">January</option>
+                            <option value="1">February</option>
+                            <option value="2">March</option>
+                            <option value="3">April</option>
+                            <option value="4">May</option>
+                            <option value="5">June</option>
+                            <option value="6">July</option>
+                            <option value="7">August</option>
+                            <option value="8">September</option>
+                            <option value="9">October</option>
+                            <option value="10">November</option>
+                            <option value="11">December</option>
+
+                        </select>
+                    </form>
+                    <form action="">
+                        <label for="landscape">Landscape</label>
+                        <select id="landscape" type="select">
+                            <option onclick="test()" value="coniferous">Coniferous forest</option>
+                            <option value="deciduous">Deciduous forest</option>
+                            <option value="city">City</option>
+                            <option value="fence">Fence</option>
+                            <option value="water">Water Course</option>
+
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div style="display: grid; gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));" class="flexbox">
+                <a class="mushroom-card" href="produkt.html">
+                    <article>
+                        <img style="height: auto; width: 60%;"
+                            src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
+                            alt="Picture of a mushroom">
+                        <header>
+                            <h2>Mushroom Title</h2>
+                        </header>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis
+                            eum
+                            repudiandae optio, earum provident et nobis nostrum veniam adipisci sequi minus alias
+                            temporibus.
+                        </div>
+                        <p>Read more</p>
+                    </article>
+                </a>
+                <a class="mushroom-card" href="produkt.html">
+                    <article>
+                        <img style="height: auto; width: 60%;"
+                            src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
+                            alt="Picture of a mushroom">
+                        <header>
+                            <h2>Mushroom Title</h2>
+                        </header>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis
+                            eum
+                            repudiandae optio, earum provident et nobis nostrum veniam adipisci sequi minus alias
+                            temporibus.
+                        </div>
+                        <p>Read more</p>
+                    </article>
+                </a>
+                <a class="mushroom-card" href="produkt.html">
+                    <article>
+                        <img style="height: auto; width: 60%;"
+                            src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
+                            alt="Picture of a mushroom">
+                        <header>
+                            <h2>Mushroom Title</h2>
+                        </header>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis
+                            eum
+                            repudiandae optio, earum provident et nobis nostrum veniam adipisci sequi minus alias
+                            temporibus.
+                        </div>
+                        <p>Read more</p>
+                    </article>
+                </a>
+                <a class="mushroom-card" href="produkt.html">
+                    <article>
+                        <img style="height: auto; width: 60%;"
+                            src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
+                            alt="Picture of a mushroom">
+                        <header>
+                            <h2>Mushroom Title</h2>
+                        </header>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis
+                            eum
+                            repudiandae optio, earum provident et nobis nostrum veniam adipisci sequi minus alias
+                            temporibus.
+                        </div>
+                        <p>Read more</p>
+                    </article>
+                </a>
+            </div>
+    </main>
+    <footer></footer>
+    <script src="/main.js"></script>
+</body>
+
+</html>
