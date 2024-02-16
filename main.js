@@ -18,12 +18,6 @@ function showData(data) {
   data.forEach(listMushroom);
 }
 
-//function (){}
-
-function test() {
-  console.log("test");
-}
-
 function listMushroom(oneMushroom) {
   console.log("listMushroom");
   const product = document.querySelector("template").content;
@@ -44,8 +38,24 @@ function listMushroom(oneMushroom) {
   //  console.log(oneMushroom.season_0);
   // }
 
+  function fetchTest() {
+    console.log("test");
+    //const test = ``;
+
+    //document.querySelector(".test-button").setAttribute("href", `produkt.html?id=${oneMushroom.id}`);
+    document.querySelector(".test-button").setAttribute("href", `$produktliste.html?id=103`);
+  }
+
   // Append
   console.log("paste");
   const parentElement = document.querySelector(".produktliste");
   parentElement.appendChild(myClone);
 }
+
+// function test() {
+//   console.log("test");
+//   //const test = ``;
+
+//   //document.querySelector(".test-button").setAttribute("href", `produkt.html?id=${oneMushroom.id}`);
+//   document.querySelector.setAttribute("href", `${oneMushroom.id}`);
+// }
