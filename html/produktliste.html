@@ -57,77 +57,69 @@
                     </form>
                 </div>
             </div>
-            <div style="display: grid; gap: 1rem;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));" class="flexbox">
+            <hr>
+            <section class="produktliste">
+
+            </section>
+            <hr>
+            <template>
                 <a class="mushroom-card" href="produkt.html">
                     <article>
-                        <img style="height: auto; width: 60%;"
+                        <img class="mush-img"
                             src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
                             alt="Picture of a mushroom">
                         <header>
-                            <h2>Mushroom Title</h2>
+                            <h2 class="title">Mushroom Title</h2>
                         </header>
                         <div class="card-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis
-                            eum
-                            repudiandae optio, earum provident et nobis nostrum veniam adipisci sequi minus alias
-                            temporibus.
                         </div>
-                        <p>Read more</p>
+                        <p>Click to read more</p>
                     </article>
                 </a>
-                <a class="mushroom-card" href="produkt.html">
-                    <article>
-                        <img style="height: auto; width: 60%;"
-                            src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
-                            alt="Picture of a mushroom">
-                        <header>
-                            <h2>Mushroom Title</h2>
-                        </header>
-                        <div class="card-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis
-                            eum
-                            repudiandae optio, earum provident et nobis nostrum veniam adipisci sequi minus alias
-                            temporibus.
-                        </div>
-                        <p>Read more</p>
-                    </article>
-                </a>
-                <a class="mushroom-card" href="produkt.html">
-                    <article>
-                        <img style="height: auto; width: 60%;"
-                            src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
-                            alt="Picture of a mushroom">
-                        <header>
-                            <h2>Mushroom Title</h2>
-                        </header>
-                        <div class="card-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis
-                            eum
-                            repudiandae optio, earum provident et nobis nostrum veniam adipisci sequi minus alias
-                            temporibus.
-                        </div>
-                        <p>Read more</p>
-                    </article>
-                </a>
-                <a class="mushroom-card" href="produkt.html">
-                    <article>
-                        <img style="height: auto; width: 60%;"
-                            src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
-                            alt="Picture of a mushroom">
-                        <header>
-                            <h2>Mushroom Title</h2>
-                        </header>
-                        <div class="card-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis
-                            eum
-                            repudiandae optio, earum provident et nobis nostrum veniam adipisci sequi minus alias
-                            temporibus.
-                        </div>
-                        <p>Read more</p>
-                    </article>
-                </a>
-            </div>
+            </template>
+
+            <!-- Fy fy style tag -->
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                section {
+                    display: grid;
+                    gap: 1rem;
+                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                }
+
+                article {
+                    display: contents;
+                }
+
+                a {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: subgrid;
+                    grid-row: span 4;
+
+                    background-color: #f3f5f5;
+                    box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
+                }
+
+                article img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    aspect-ratio: 16/9;
+                }
+
+                a h1,
+                h2,
+                div,
+                p {
+                    padding: 0.5rem;
+                }
+            </style>
+
     </main>
     <footer></footer>
     <script src="/main.js"></script>
