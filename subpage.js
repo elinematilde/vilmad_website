@@ -1,23 +1,28 @@
-//https://pkjbphmcnorwfmrlmfci.supabase.co
+const urlParams = new URLSearchParams(window.location.search);
+const query = urlParams.get("seasons");
 
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBramJwaG1jbm9yd2ZtcmxtZmNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3MjUyNzQsImV4cCI6MjAyMzMwMTI3NH0.nLeOP6ZBdwY2RvoWnk5x8a-WlwRSbbsoQKcrRkSCBHI
+const url = `https://pkjbphmcnorwfmrlmfci.supabase.co/rest/v1/VildMadData?seasons=cs.["${query}"]`;
+const apiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBramJwaG1jbm9yd2ZtcmxtZmNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3MjUyNzQsImV4cCI6MjAyMzMwMTI3NH0.nLeOP6ZBdwY2RvoWnk5x8a-WlwRSbbsoQKcrRkSCBHI";
 
-fetch(`https://pkjbphmcnorwfmrlmfci.supabase.co/rest/v1/VildMadData?`, {
-  method: "GET",
+fetch(url, {
   headers: {
-    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBramJwaG1jbm9yd2ZtcmxtZmNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3MjUyNzQsImV4cCI6MjAyMzMwMTI3NH0.nLeOP6ZBdwY2RvoWnk5x8a-WlwRSbbsoQKcrRkSCBHI",
+    apikey: apiKey,
   },
 })
-  .then((res) => res.json())
-  .then(showData);
+  .then((response) => response.json())
+  .then(showMushrooms);
 
-function showData(data) {
-  // We have the data
-  console.log(data);
-  console.log("heeey");
-  data.forEach(listMushroom);
+function showMushrooms(data) {
+  data.forEach((element) => {
+    const link = document.createElement("a");
+    link.href = `produkt.html?id=${element.id}`;
+    link.textContent = element.title;
+    document.querySelector(".mushSeason").textContent = query;
+    document.body.appendChild(link);
+  });
 }
 
+// copy paste, skal lave cards ligesom produktliste
 function listMushroom(oneMushroom) {
   console.log("listMushroom");
   const product = document.querySelector("template").content;

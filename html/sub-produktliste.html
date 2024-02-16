@@ -4,25 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Svamp</title>
+    <title>Produktliste</title>
 </head>
 
 <body>
-    <main>
-        <a class="goBackLink" href="">Go back</a>
-        <article>
-            <h1>TITLE</h1>
-            <img class="img1" src="" alt="Type">
-            <h2>This mushroom grows during <span class="mushSeason">SEASON</span></h2>
-            <p class="description">DESCRIPTION</p>
-            <h4>You will find this <span class="headCatagory"></span> in a <span class="harvestingLandscape">HARVESTING
-                    LANDSCAPE</span></h4>
-            <img class="img2" src="" alt="This is a ">
-            <p>System ID= <span class="showId"></span></p>
+    <header></header>
+    <a class="goBackLink" href="produktliste.html">Go back</a>
+    <h1>Showing mushrooms for season <span class="mushSeason">SEASON</span></h1>
+    <main></main>
 
-
-        </article>
-    </main>
+    <!-- Fy fy style tag -->
     <style>
         * {
             margin: 0;
@@ -39,7 +30,7 @@
             display: contents;
         }
 
-        main {
+        a {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: subgrid;
@@ -49,31 +40,25 @@
             box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
         }
 
-        article .img1 {
+        article img {
             width: 100%;
             height: auto;
             object-fit: cover;
             aspect-ratio: 16/9;
         }
 
-        article .img2 {
-            width: 50%;
-            height: auto;
-            object-fit: cover;
-            aspect-ratio: 16/9;
-            margin-left: auto;
-        }
-
-        main h1,
+        a h1,
         h2,
-        h4,
         div,
         p {
             padding: 0.5rem;
         }
     </style>
 
+
+    <footer></footer>
+    <script src="/subpage.js"></script>
+
 </body>
-<script src="/produkt.js"></script>
 
 </html>
