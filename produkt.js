@@ -50,9 +50,14 @@ function showProduct(data) {
   document.querySelector(".headCatagory").textContent = oneMushroom.head_category;
   document.querySelector(".img2").src = `${oneMushroom.landscape_img}`;
 
-  document.querySelector(".goBackLink").setAttribute("href", `sub-produktliste.html?seasons=${oneMushroom.seasons[0]}`);
+  //document.querySelector(".goBackLink").setAttribute("href", `sub-produktliste.html?seasons=${oneMushroom.seasons[0]}`);
 
   if ((oneMushroom.season_1 = 5)) {
     console.log("June");
   }
+}
+
+function goBack() {
+  console.log("back");
+  window.history.back();
 }

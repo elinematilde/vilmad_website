@@ -17,9 +17,14 @@ function showMushrooms(data) {
     const link = document.createElement("a");
     link.href = `produkt.html?id=${element.id}`;
     link.textContent = element.title;
-    document.querySelector(".mushSeason").textContent = query;
+
     document.body.appendChild(link);
   });
+}
+
+function goBack() {
+  console.log("back");
+  window.history.back();
 }
 
 // copy paste, skal lave cards ligesom produktliste
