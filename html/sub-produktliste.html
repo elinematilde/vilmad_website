@@ -8,20 +8,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Mansalva&family=Special+Elite&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="/css/generel.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="/css/joris.css ">
     <title>Produktliste</title>
 </head>
 
 <body>
     <header></header>
-    <button class="goBackLink" href="" onclick="goBack()">Go back</button>
-    <h1>Showing elements for <span class="subCategory">SUBCATEGORY</span></h1>
     <main>
-        <section class="produktliste"></section>
-    </main>
+        <button class="goBackLink" href="" onclick="goBack()">
+            <img src="/pinkpaper.png" class="pinkpaper">Go back</img>
+        </button>
+        <h1>Showing elements for <span class="subCategory">SUBCATEGORY</span></h1>
+        <section class="produktliste">
 
-    <template>
+        </section>
+        <hr>
+        <template>
+            <a class="card" href="produkt.html">
+                <article>
+                    <img class="pinImg" src="https://pngimg.com/d/pin_PNG64.png" alt="">
+                    <img class="mush-img"
+                        src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
+                        alt="Picture of a mushroom">
+                    <header>
+                        <h2 class="title">Mushroom Title</h2>
+                    </header>
+                </article>
+            </a>
+        </template>
+    </main>
+    <!-- <template>
         <a class="mushroom-card" href="produkt.html">
             <article>
                 <img class="mush-img"
@@ -35,7 +53,7 @@
                 <p>Click to read more</p>
             </article>
         </a>
-    </template>
+    </template> -->
 
     <!-- Fy fy style tag -->
     <style>

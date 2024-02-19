@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* category style */
+.choose-cat {
+  color: #2f2f2f;
+  background-color: #d6eaf2;
+  margin: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+.flexbox1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexbox1 a {
+  margin: 5px;
+  padding: 1rem;
+}
+
+.pinFlex {
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+/* Card style */
+article {
+  display: contents;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+
+  background-color: #ccba62;
+  border: solid #b8a337 2px;
+  box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
+  border-radius: 2%;
+  margin: auto;
+  width: 15rem;
+
+  text-decoration: none;
+}
+
+article .mush-img {
+  width: 90%;
+  height: 160%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  margin: auto;
+
+  filter: sepia(0.6);
+
+  /* Virker ikke helt */
+  box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
+  -webkit-box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
+  -moz-box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
+
+  border-radius: 5px;
+}
+
+.card h1,
+h2,
+p {
+  padding: 0.5rem;
+}
+
+.pinImg {
+  height: auto;
+  width: 20%;
+  margin: auto;
+  padding-top: 0.2rem;
+}
+.card header h2 {
+  background-color: #e4cf69;
+  color: rgb(39, 39, 39);
+  font-size: 1.5rem;
+  margin: 0.75rem;
+  text-align: center;
+
+  margin-top: 28%;
+
+  border-radius: 5px;
+}
+
+/* ANIMATIONS */
+.card:hover h2 {
+  color: purple;
+}
+.card:active h2 {
+  color: red;
+}
+
+.card:hover {
+  animation-name: card_hover_kf;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.13, 0.67, 0.48, 0.89);
+  animation-fill-mode: both;
+  transform-origin: top;
+}
+
+@keyframes card_hover_kf {
+  from {
+    transform: rotate();
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
+
+.card {
+  animation-name: card_hover_default_kf;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.13, 0.67, 0.48, 0.89);
+  transform-origin: top;
+}
+
+@keyframes card_hover_default_kf {
+  from {
+    transform: rotate(3deg);
+  }
+  to {
+    transform: rotate();
+  }
+}
+
+/* rotate vinkler */
+.rotate1 {
+  transform: rotate(4deg);
+}
+
+.rotate2 {
+  transform: rotate(-2deg);
+}
+
+.rotate3 {
+  transform: rotate(1deg);
+}
+
+.rotate4 {
+  transform: rotate(-4deg);
+}
+
+.rotate5 {
+  transform: rotate(3deg);
+}
+
+.rotate6 {
+  transform: rotate(-1deg);
+}
+
+/* Buttons */
+
+.goBackLink {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 20%;
+
+  background-color: transparent;
+  border: transparent;
+  padding: 2rem;
+  z-index: 10;
+}
+.pinkpaper {
+  width: 100%;
+  height: auto;
+  background-image: url("/pinkpaper.png");
+}

@@ -26,8 +26,11 @@ function listMushroom(oneMushroom) {
   const myClone = product.cloneNode(true);
 
   // Change content
+  //random pos
+  let myRandomPos = Math.floor(Math.random() * 6) + 1;
+  myClone.querySelector(".card").classList.add("rotate" + myRandomPos);
+
   myClone.querySelector(".title").textContent = oneMushroom.title;
-  //myClone.querySelector(".card-content").textContent = oneMushroom.season_0;
 
   myClone.querySelector(".mush-img").src = `${oneMushroom.mush_img}`;
   console.log(oneMushroom.id);
@@ -35,7 +38,7 @@ function listMushroom(oneMushroom) {
   const urlParamsCat = new URLSearchParams(window.location.search);
   const id = urlParamsCat.get("id");
 
-  myClone.querySelector(".mushroom-card").setAttribute("href", `produkt.html?id=${oneMushroom.id}`);
+  myClone.querySelector(".card").setAttribute("href", `produkt.html?id=${oneMushroom.id}`);
 
   //if (((oneMushroom.season_0 = 0), 1, 2, 3)) {
   //  console.log(oneMushroom.season_0);

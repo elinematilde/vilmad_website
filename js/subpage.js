@@ -42,7 +42,9 @@ function showMushrooms(data) {
 
     // Change content
     myClone.querySelector(".title").textContent = element.title;
-    //myClone.querySelector(".card-content").textContent = oneMushroom.season_0;
+
+    let myRandomPos = Math.floor(Math.random() * 6) + 1;
+    myClone.querySelector(".card").classList.add("rotate" + myRandomPos);
 
     myClone.querySelector(".mush-img").src = `${element.mush_img}`;
     console.log(element.id);
@@ -50,7 +52,7 @@ function showMushrooms(data) {
     const urlParamsCat = new URLSearchParams(window.location.search);
     const id = urlParamsCat.get("id");
 
-    myClone.querySelector(".mushroom-card").setAttribute("href", `produkt.html?id=${element.id}`);
+    myClone.querySelector(".card").setAttribute("href", `produkt.html?id=${element.id}`);
 
     // Append
     console.log("append");
