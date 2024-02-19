@@ -10,6 +10,9 @@ if (query) {
 } else if (landscapes) {
   urlmodifier = `?harvesting_landscapes=eq.${landscapes}`;
   title = landscapes;
+} else if (alphabet) {
+  urlmodifier = `?title=desc.${alphabet}`;
+  title = alphabet;
 }
 
 const url = `https://pkjbphmcnorwfmrlmfci.supabase.co/rest/v1/VildMadData${urlmodifier}`;
