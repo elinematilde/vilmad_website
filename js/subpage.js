@@ -1,6 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const query = urlParams.get("seasons");
 const landscapes = urlParams.get("harvesting_landscapes");
+const alphabet = urlParams.get("title");
+
 let urlmodifier = "";
 let title = "";
 
@@ -10,6 +12,9 @@ if (query) {
 } else if (landscapes) {
   urlmodifier = `?harvesting_landscapes=eq.${landscapes}`;
   title = landscapes;
+} else if (alphabet) {
+  urlmodifier = `?title=desc.${alphabet}`;
+  title = alphabet;
 }
 
 const url = `https://pkjbphmcnorwfmrlmfci.supabase.co/rest/v1/VildMadData${urlmodifier}`;
