@@ -49,6 +49,7 @@ function showMushrooms(data) {
     myClone.querySelector(".mush-img").src = `${element.mush_img}`;
     console.log(element.id);
 
+    //slet, har ingen effekt
     const urlParamsCat = new URLSearchParams(window.location.search);
     const id = urlParamsCat.get("id");
 
