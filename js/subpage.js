@@ -13,6 +13,8 @@ fetch(url, {
   .then(showMushrooms);
 
 function showMushrooms(data) {
+  document.querySelector(".subCategory").textContent = query;
+
   data.forEach((element) => {
     //Fra YT tutorial
     // const link = document.createElement("a");
