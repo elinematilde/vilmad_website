@@ -55,6 +55,9 @@ header nav .menu {
   justify-content: end;
   gap: 0.5%;
   align-items: center;
+  background-color: #ffffff;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
 .topmenu_container button {
   margin-right: auto;

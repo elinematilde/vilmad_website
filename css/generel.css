@@ -23,7 +23,9 @@ p {
 /****** KATEGORIER ******/
 
 .all_mushrooms h1 {
-  color: grey;
+  color: #595656;
   margin-bottom: 2%;
   margin-left: 3%;
+  font-size: 2rem;
+  margin-top: 0.5%;
 }

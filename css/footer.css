@@ -1,9 +1,11 @@
 footer {
   display: flex;
-  background-color: rgb(252 240 246 / 29%);
+  background-color: rgb(254, 248, 251);
   padding: 2%;
   justify-content: center;
   gap: 5%;
+  margin-top: 3%;
+  box-shadow: 0 0 10px rgb(180, 164, 179);
 }
 
 footer img {
