@@ -31,6 +31,32 @@ section {
   border-radius: 5px;
   overflow-x: auto;
   padding: 1rem;
+  box-shadow: 0 0 10px rgb(130, 125, 125);
+}
+.col1 h3 {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  margin-left: 1.1%;
+  color: #595656;
+}
+.col2 h3 {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  margin-left: 1.1%;
+  color: #595656;
+}
+
+.col3 h3 {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+
+  color: #595656;
 }
 
 .pins {
@@ -40,7 +66,10 @@ section {
 }
 
 .pins:first-child {
-  transform: scaleX(-1);
+  transform: scaleX(1);
+  width: 2%;
+
+  height: auto;
 }
 
 .flexbox1 {
@@ -65,8 +94,8 @@ article {
   grid-template-rows: subgrid;
   grid-row: span 4;
 
-  background-color: #ccba62;
-  border: solid #b8a337 2px;
+  background-color: rgba(233, 243, 90, 1);
+  border: solid rgb(206, 215, 80) 2px;
   box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
   border-radius: 2%;
   margin: auto;
@@ -106,12 +135,12 @@ h2 {
   padding-top: 0.2rem;
 }
 .card header h2 {
-  background-color: #e4cf69;
+  background-color: rgb(220, 228, 103);
   color: rgb(39, 39, 39);
   font-size: 1.5rem;
   margin: 0.75rem;
   margin-top: 28%;
-
+  text-align: center;
   border-radius: 5px;
 }
 
@@ -182,6 +211,37 @@ h2 {
 }
 
 /* Buttons */
+
+button {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #7c7878;
+  background-color: #f9e5f0;
+  padding: 0.3%;
+  margin-left: 1%;
+  margin-top: 1%;
+  border-color: #dcacc3;
+  /* background-color: #fad0e7; */
+  border-radius: 4px;
+  /* box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32); */
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  line-height: -1.5;
+}
+
+button:hover {
+  box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32) inset;
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  background-color: #f291c0;
+  color: #1abeae;
+}
+button:active {
+  box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32) inset;
+  transform: scale(0.95);
+  color: #f35a5a;
+}
 .goBackLink {
   position: sticky;
   top: auto;

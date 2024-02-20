@@ -19,3 +19,11 @@ p {
   font-style: normal;
   font-size: 1rem;
 }
+
+/****** KATEGORIER ******/
+
+.all_mushrooms h1 {
+  color: grey;
+  margin-bottom: 2%;
+  margin-left: 3%;
+}
