@@ -1,0 +1,146 @@
+.container {
+  position: relative;
+}
+
+main {
+  background-image: url(../img/Grid_baggrund.png);
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-left: 50px;
+}
+
+.tekst {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  color: #6e6e6e; /* Juster tekstfarven efter behov */
+  font-size: 14px; /* Juster tekststørrelsen efter behov */
+  font-weight: bold; /* Juster tekstvægten efter behov */
+  z-index: 1;
+}
+#lille_seddel_tekst {
+  left: 50%;
+  top: 40%;
+}
+
+#tekst_sankestil {
+  left: 50%;
+  top: 15%;
+  rotate: -4deg;
+}
+
+#guide_tekst {
+  left: 45%;
+  top: 50%;
+  rotate: 5deg;
+}
+
+#tekst_vildmad {
+  left: 45%;
+  top: 50%;
+}
+
+h2,
+h3,
+p {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  width: 90%;
+}
+
+#vild_mad {
+  grid-area: 1/1/2/2;
+}
+
+#vild_mad_guide {
+  grid-area: 2/2/3/3;
+  align-self: start;
+}
+
+#god_sankestil {
+  grid-area: 2 / 1 / 4 / 2;
+  align-self: left;
+}
+#spist_noget_giftigt {
+  align-self: center;
+  grid-area: 1 / 2 / 2 / 3;
+}
+.container {
+  position: relative;
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-left: 50px;
+}
+
+.tekst {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  color: #6e6e6e; /* Juster tekstfarven efter behov */
+  font-size: 14px; /* Juster tekststørrelsen efter behov */
+  font-weight: bold; /* Juster tekstvægten efter behov */
+  z-index: 1;
+}
+#lille_seddel_tekst {
+  left: 50%;
+  top: 40%;
+}
+
+#tekst_sankestil {
+  left: 50%;
+  top: 15%;
+  rotate: -4deg;
+}
+
+#guide_tekst {
+  left: 45%;
+  top: 50%;
+  rotate: 5deg;
+}
+
+#tekst_vildmad {
+  left: 45%;
+  top: 50%;
+}
+
+h2,
+h3,
+p {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  width: 90%;
+}
+
+#vild_mad {
+  grid-area: 1/1/2/2;
+}
+
+#vild_mad_guide {
+  grid-area: 2/2/3/3;
+  align-self: start;
+}
+
+#god_sankestil {
+  grid-area: 2 / 1 / 4 / 2;
+  align-self: left;
+}
+#spist_noget_giftigt {
+  align-self: center;
+  grid-area: 1 / 2 / 2 / 3;
+}
