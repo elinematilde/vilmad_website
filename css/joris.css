@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-image: url(../bastian_img/Grid_baggrund.png);
+}
 
 .flex1 {
   display: flex;
@@ -25,8 +28,9 @@ section {
 }
 
 .pins {
-  width: 5%;
-  padding: 0.5rem;
+  width: 7%;
+
+  height: auto;
 }
 
 .pins:first-child {
@@ -42,12 +46,6 @@ section {
 .flexbox1 a {
   margin: 5px;
   padding: 1rem;
-}
-
-.pinFlex {
-  display: flex;
-  justify-content: space-between;
-  z-index: 10;
 }
 
 /* Card style */
@@ -257,8 +255,9 @@ h2 {
 
 /* DARKMODE */
 .darkMode {
-  background-color: #4a4a4a;
-  color: #dedede;
+  background-image: url(/img/darkmode_baggrund.png);
+  /* background-color: #4a4a4a;
+  color: #dedede; */
   transition: opacity 0.5s ease-in-out;
 }
 
