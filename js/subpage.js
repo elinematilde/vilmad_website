@@ -3,6 +3,7 @@ const urlParams = new URLSearchParams(window.location.search);
 // Modify metode
 const query = urlParams.get("seasons");
 const landscapes = urlParams.get("harvesting_landscapes");
+const alphabet = urlParams.get("title");
 let urlmodifier = "";
 let title = "";
 
@@ -13,7 +14,7 @@ if (query) {
   urlmodifier = `?harvesting_landscapes=eq.${landscapes}`;
   title = landscapes;
 } else if (alphabet) {
-  urlmodifier = `?title=desc.${alphabet}`;
+  urlmodifier = `?title=order=desc.${alphabet}`;
   title = alphabet;
 }
 
