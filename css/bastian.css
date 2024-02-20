@@ -5,6 +5,21 @@
     display: grid;
     grid-template-columns: 1fr 8fr;
 }
+.grid_1-1 {
+    display: grd;
+    grid-template-columns: 1fr 1fr;
+}
+.ikon_grid {
+    display: gid;
+    grid-template-columns: 1fr 10fr;
+}
+
+.lokationtxt {
+    background-color: white;
+    padding-left: 50px;
+    font-size: 14px;
+}
+
 @media (max-width: 700px) {
 .barcode {
   max-height: 0%;
@@ -21,9 +36,18 @@
     display: grid;
     grid-template-columns: 1fr;
 }
+.lokationikon {
+    max-width: 100%;
+  position: absolute;
+ 
 }
 .svampebillede {
   max-width: 100%;
+}
+.sæsonikon {
+    max-width: 80%;
+    position: absolute;
+}
 }
 @media (min-width: 700px) {
     .grid_card {
@@ -43,6 +67,20 @@
         border-width: 0px 0px 0px 2px;
         border-color: white;
     }
+    .landskabbillede {
+        max-height:0%;
+        position: absolute;
+    }
+    .lokationikon {
+        max-width: 100%;
+      position: absolute;
+      left: 40%;
+    }
+    .sæsonikon {
+        max-width: 80%;
+        position: absolute;
+        left: 40%;
+    }
 }
 
 .produkth1 {
@@ -53,9 +91,10 @@
   font-size: 15px;
 }
 .sæsoner {
-  font-size: 20px;
-  background-color: white;
-  padding: 5px;
+    font-size: 14px;
+    background-color: white;
+    padding: 8px;
+    padding-left: 55px;
 }
 .divider {
     padding:7%;
@@ -64,12 +103,9 @@
     color: white;
     text-align: center;
 }
-* {
+ {
   margin: 0;
   padding: 0;
-}
-button {
-    background-color: #f9d3e6;
 }
 section {
   display: grid;
