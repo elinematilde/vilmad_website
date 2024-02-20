@@ -21,10 +21,9 @@ main {
     display: block;
   }
 
-p {
-  font-size: 0.5rem;
-}
-
+  p {
+    font-size: 0.5rem;
+  }
 }
 
 h1 {
@@ -142,4 +141,3 @@ p {
 #strandurter_cirkel {
   border: 20px solid rgba(225, 190, 253, 0.76);
 }
-.s{s}
