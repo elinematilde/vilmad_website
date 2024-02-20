@@ -209,3 +209,25 @@ p {
 .goBackLink:hover {
   opacity: 1;
 }
+
+/* CTA1 */
+.cta1 {
+  color: #6e6e6e;
+}
+
+/* DARKMODE */
+.darkMode {
+  background-color: #4a4a4a;
+  color: #dedede;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: 0.75;
+    transition: opacity 0.2s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}

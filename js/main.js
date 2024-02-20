@@ -49,3 +49,9 @@ function listMushroom(oneMushroom) {
   const parentElement = document.querySelector(".produktliste");
   parentElement.appendChild(myClone);
 }
+
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("darkMode");
+  console.log("dark/light");
+}
