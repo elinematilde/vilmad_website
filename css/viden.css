@@ -2,6 +2,10 @@
   position: relative;
 }
 
+main {
+  background-image: url(../img/Grid_baggrund.png);
+}
+
 .grid_1_1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
