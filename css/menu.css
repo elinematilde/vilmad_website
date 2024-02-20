@@ -29,8 +29,8 @@ header nav .menu {
 }
 
 .menu a:hover {
-  color: #000000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: rgb(108, 99, 104);
+
   transition: text-shadow 0.3s ease;
 }
 
@@ -40,7 +40,7 @@ header nav .menu {
 }
 
 .logo a:hover {
-  color: #000000;
+  color: rgba(255, 211, 235, 1);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transition: text-shadow 0.3s ease;
 }
@@ -56,6 +56,7 @@ header nav .menu {
   justify-content: flex-end;
   margin-right: 0.8%;
   margin-bottom: 0.5%;
+  text-decoration: none;
 }
 
 .sprog_container a {
@@ -65,11 +66,12 @@ header nav .menu {
   font-family: "Jockey One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  margin: 0; /* Remove default margin for the h2 elements */
 }
 
-.sprog_container h2 {
-  margin: 0; /* Remove default margin for the h2 elements */
+.sprog_container a:hover {
+  color: rgb(0, 0, 0);
 }
 
 /* MENU - MOBIl */
