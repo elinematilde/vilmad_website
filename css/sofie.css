@@ -6,12 +6,25 @@ main {
   background-image: url(../bastian_img/Grid_baggrund.png);
 }
 
-.grid {
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  height: 80%;
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    height: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    display: block;
+  }
+
+p {
+  font-size: 0.5rem;
+}
+
 }
 
 h1 {
