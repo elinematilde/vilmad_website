@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.produktliste2 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* category style */
+.choose-cat {
+  color: #2f2f2f;
+  background-color: #d6eaf2;
+  margin: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.pins {
+  width: 5%;
+  padding: 0.5rem;
+}
+
+.pins:first-child {
+  transform: scaleX(-1);
+}
+
+.flexbox1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexbox1 a {
+  margin: 5px;
+  padding: 1rem;
+}
+
+.pinFlex {
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+/* Card style */
+article {
+  display: contents;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+
+  background-color: #ccba62;
+  border: solid #b8a337 2px;
+  box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
+  border-radius: 2%;
+  margin: auto;
+  width: 15rem;
+
+  text-decoration: none;
+
+  max-height: 100%;
+}
+
+article .mush-img {
+  width: 90%;
+  height: 160%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  margin: auto;
+
+  filter: sepia(0.6);
+
+  /* Virker ikke helt */
+  box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
+  -webkit-box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
+  -moz-box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
+
+  border-radius: 5px;
+}
+
+.card h1,
+h2 {
+  padding: 0.5rem;
+}
+
+.pinImg {
+  height: auto;
+  width: 20%;
+  margin: auto;
+  padding-top: 0.2rem;
+}
+.card header h2 {
+  background-color: #e4cf69;
+  color: rgb(39, 39, 39);
+  font-size: 1.5rem;
+  margin: 0.75rem;
+  margin-top: 28%;
+
+  border-radius: 5px;
+}
+
+/* ANIMATIONS */
+.card:hover h2 {
+  color: purple;
+}
+.card:active h2 {
+  color: red;
+}
+
+.card:hover {
+  animation-name: card_hover_kf;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.13, 0.67, 0.48, 0.89);
+  animation-fill-mode: both;
+  transform-origin: top;
+}
+
+@keyframes card_hover_kf {
+  from {
+    transform: rotate();
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
+
+.card {
+  animation-name: card_hover_default_kf;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.13, 0.67, 0.48, 0.89);
+  transform-origin: top;
+}
+
+@keyframes card_hover_default_kf {
+  from {
+    transform: rotate(3deg);
+  }
+  to {
+    transform: rotate();
+  }
+}
+
+/* rotate vinkler */
+.rotate1 {
+  transform: rotate(4deg);
+}
+
+.rotate2 {
+  transform: rotate(-2deg);
+}
+
+.rotate3 {
+  transform: rotate(1deg);
+}
+
+.rotate4 {
+  transform: rotate(-4deg);
+}
+
+.rotate5 {
+  transform: rotate(3deg);
+}
+
+.rotate6 {
+  transform: rotate(-1deg);
+}
+
+/* Buttons */
+.goBackLink {
+  position: sticky;
+  top: auto;
+  left: 0;
+  width: auto;
+  z-index: 4;
+  opacity: 0.8;
+  transform: rotate(-10deg);
+}
+.goBackLink button {
+  position: absolute;
+  top: -5.9rem;
+  left: 0;
+
+  text-align: center;
+  background-color: transparent;
+  border: transparent;
+  padding: 2rem;
+  font-family: "Mansalva", sans-serif;
+  font-size: 1rem;
+}
+.pinkpaper {
+  position: absolute;
+  top: -8rem;
+  left: 0;
+  width: 10rem;
+  height: auto;
+  background-image: url("/pinkpaper.png");
+  z-index: -3;
+  transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.arrow {
+  position: absolute;
+  left: 2rem;
+  top: -5rem;
+  width: 5rem;
+  transform: rotateY(180deg);
+  z-index: 7;
+  transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.goBackLink:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.goBackLink:hover .pinkpaper {
+  transform: rotate(15deg);
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.goBackLink:hover button {
+  transform: scale(1.2);
+
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* CTA1 */
+.cta1 {
+  color: #6e6e6e;
+  font-family: "Jockey One", sans-serif;
+  text-decoration: none;
+  background-color: #fad0e7;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32);
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cta1:hover {
+  box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32) inset;
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  background-color: #f291c0;
+  color: #1abeae;
+}
+.cta1:active {
+  box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32) inset;
+  transform: scale(0.95);
+  color: #f35a5a;
+}
+
+/* DARKMODE */
+.darkMode {
+  background-color: #4a4a4a;
+  color: #dedede;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: 0.75;
+    transition: opacity 0.2s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
