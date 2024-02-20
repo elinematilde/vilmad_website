@@ -5,7 +5,7 @@
 
 .flex1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 section {
@@ -21,7 +21,18 @@ section {
   margin: 1rem;
   border-radius: 5px;
   overflow-x: auto;
+  padding: 1rem;
 }
+
+.pins {
+  width: 5%;
+  padding: 0.5rem;
+}
+
+.pins:first-child {
+  transform: scaleX(-1);
+}
+
 .flexbox1 {
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +69,8 @@ article {
   width: 15rem;
 
   text-decoration: none;
+
+  max-height: 100%;
 }
 
 article .mush-img {
@@ -78,8 +91,7 @@ article .mush-img {
 }
 
 .card h1,
-h2,
-p {
+h2 {
   padding: 0.5rem;
 }
 
@@ -195,6 +207,7 @@ p {
   height: auto;
   background-image: url("/pinkpaper.png");
   z-index: -3;
+  transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .arrow {
@@ -204,15 +217,42 @@ p {
   width: 5rem;
   transform: rotateY(180deg);
   z-index: 7;
+  transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .goBackLink:hover {
   opacity: 1;
+  cursor: pointer;
+}
+.goBackLink:hover .pinkpaper {
+  transform: rotate(15deg);
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.goBackLink:hover button {
+  transform: scale(1.2);
+
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* CTA1 */
 .cta1 {
   color: #6e6e6e;
+  font-family: "Jockey One", sans-serif;
+  text-decoration: none;
+  background-color: #fad0e7;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32);
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cta1:hover {
+  box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32) inset;
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(1.1);
+}
+.cta1:active {
+  box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32) inset;
+  transform: scale(0.95);
 }
 
 /* DARKMODE */
