@@ -1,4 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
+
+// Modify metode
 const query = urlParams.get("seasons");
 const landscapes = urlParams.get("harvesting_landscapes");
 let urlmodifier = "";
