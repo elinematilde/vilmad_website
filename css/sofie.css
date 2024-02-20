@@ -1,6 +1,9 @@
 body {
   display: flex;
-  margin: 50px;
+}
+
+main {
+  background-image: url(../bastian_img/Grid_baggrund.png);
 }
 
 .grid {
@@ -26,7 +29,10 @@ p {
 }
 
 .tekst_boks {
-  height: 140px;
+  border-radius: 30px;
+  border: 10px solid #fff;
+  background-color: #ffff;
+  height: 200px;
   grid-area: 1 / 1 / 2 / 6;
   text-align: center;
 }
