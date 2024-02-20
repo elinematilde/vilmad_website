@@ -50,6 +50,22 @@ header nav .menu {
   height: auto; /* Maintain the aspect ratio */
 }
 
+.topmenu_container {
+  display: flex;
+  justify-content: end;
+  gap: 0.5%;
+}
+
+.profil_icon img {
+  width: 55%;
+  height: auto;
+}
+
+.profil_icon img:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
 .sprog_container {
   display: flex;
 
