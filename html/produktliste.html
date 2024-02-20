@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Mansalva&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/generel.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/joris.css">
     <title>Produktliste</title>
 </head>
 
@@ -11,127 +18,66 @@
     <header></header>
     <main>
         <h1>The Mushroom lexicon</h1>
+        <button onclick="darkMode()">Toggle dark/light-mode</button>
         <div class="choose-cat">
-            <div class="flexbox">
-                <img style="height: auto; width: 10%; transform: scaleX(-1);" src="https://pngimg.com/d/pin_PNG64.png"
-                    alt="">
-                <img style="height: auto; width: 10%; " src="https://pngimg.com/d/pin_PNG64.png" alt="">
-                <div class="flexbox">
-                    <form action="">
-                        <label for="season">Seasons</label>
-                        <select id="season" type="select">
-                            <option value="winter">Winter</option>
-                            <option value="spring">Spring</option>
-                            <option value="summer">Summer</option>
-                            <option value="fall">Autumn</option>
-                        </select>
-                    </form>
-                    <form action="">
-                        <label for="month">Month</label>
-                        <select id="month" type="select">
-                            <option onclick="test()" value="0">January</option>
-                            <option value="1">February</option>
-                            <option value="2">March</option>
-                            <option value="3">April</option>
-                            <option value="4">May</option>
-                            <option value="5">June</option>
-                            <option value="6">July</option>
-                            <option value="7">August</option>
-                            <option value="8">September</option>
-                            <option value="9">October</option>
-                            <option value="10">November</option>
-                            <option value="11">December</option>
-
-                        </select>
-                    </form>
-                    <form action="">
-                        <label for="landscape">Landscape</label>
-                        <select id="landscape" type="select">
-                            <option onclick="test()" value="coniferous">Coniferous forest</option>
-                            <option value="deciduous">Deciduous forest</option>
-                            <option value="city">City</option>
-                            <option value="fence">Fence</option>
-                            <option value="water">Water Course</option>
-
-                        </select>
-                    </form>
-                </div>
-                <h2>Sort by season:</h2>
-                <a href="sub-produktliste.html?seasons=winter">Winter</a>
-                <a href="sub-produktliste.html?seasons=spring">Spring</a>
-                <a href="sub-produktliste.html?seasons=summer">Summer</a>
-                <a href="sub-produktliste.html?seasons=autumn">Autumn</a>
-
-                <h2>Sort by landscape:</h2>
-                <a href="sub-produktliste.html?harvesting_landscapes=City">City</a>
-                <a href="sub-produktliste.html?seasons=spring">Fence</a>
-                <a href="sub-produktliste.html?seasons=summer">Deciduous Forest</a>
-                <a href="sub-produktliste.html?seasons=autumn">Coniferous Forest</a>
-                <a href="sub-produktliste.html?seasons=autumn">Water Course</a>
+            <div class="pinFlex">
+                <img class="pins" src="https://pngimg.com/d/pin_PNG64.png" alt="">
+                <img class="pins"" src=" https://pngimg.com/d/pin_PNG64.png" alt="">
             </div>
-            <hr>
-            <h1>All mushrooms:</h1>
-            <section class="produktliste">
+            <div class="flex1">
+                <div class="col1">
+                    <h3>Sort by season:</h3>
+                    <div class="flexbox1">
+                        <a class="cta1" href="sub-produktliste.html?seasons=winter">Winter</a>
+                        <a class="cta1" href="sub-produktliste.html?seasons=spring">Spring</a>
+                        <a class="cta1" href="sub-produktliste.html?seasons=summer">Summer</a>
+                        <a class="cta1" href="sub-produktliste.html?seasons=autumn">Autumn</a>
+                    </div>
+                </div>
+                <div class="col2">
+                    <h3>Sort by landscape:</h3>
+                    <div class="flexbox1">
+                        <a class="cta1" href="sub-produktliste.html?harvesting_landscapes=City">City</a>
+                        <a class="cta1" href="sub-produktliste.html?harvesting_landscapes=Fence">Fence</a>
+                        <a class="cta1" href="sub-produktliste.html?harvesting_landscapes=Deciduous-forest">Deciduous
+                            Forest</a>
+                        <a class="cta1" href="sub-produktliste.html?harvesting_landscapes=Coniferous-forest">Coniferous
+                            Forest</a>
+                        <a class="cta1" href="sub-produktliste.html?harvesting_landscapes=Water-Course">Water Course</a>
+                    </div>
+                </div>
+                <div class="col3">
+                    <h3>Sort by alphabet:</h3>
+                    <div class="flexbox1">
+                        <a class="cta1" href="sub-produktliste.html?title=order=alphabet.desc">A - Z</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1>All mushrooms:</h1>
+        <section class="produktliste">
 
-            </section>
-            <hr>
-            <template>
-                <a class="mushroom-card" href="produkt.html">
-                    <article>
-                        <img class="mush-img"
-                            src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
-                            alt="Picture of a mushroom">
-                        <header>
-                            <h2 class="title">Mushroom Title</h2>
-                        </header>
-                        <div class="card-content">
-                        </div>
-                        <p>Click to read more</p>
-                    </article>
-                </a>
-            </template>
+        </section>
+        <hr>
+        <template>
+            <a class="card" href="produkt.html">
+                <article>
+                    <img class="pinImg" src="https://pngimg.com/d/pin_PNG64.png" alt="">
+                    <img class="mush-img"
+                        src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
+                        alt="Picture of a mushroom">
+                    <header>
+                        <h2 class="title">Mushroom Title</h2>
+                    </header>
+                </article>
+            </a>
+        </template>
 
-            <!-- Fy fy style tag -->
-            <style>
-                * {
-                    margin: 0;
-                    padding: 0;
-                }
+        <!-- Fy fy style tag -->
+        <style>
 
-                section {
-                    display: grid;
-                    gap: 1rem;
-                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                }
-
-                article {
-                    display: contents;
-                }
-
-                a {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: subgrid;
-                    grid-row: span 4;
-
-                    background-color: #f3f5f5;
-                    box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
-                }
-
-                article img {
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                    aspect-ratio: 16/9;
-                }
-
-                a h1,
-                h2,
-                div,
-                p {
-                    padding: 0.5rem;
-                }
-            </style>
+        </style>
 
     </main>
     <footer></footer>
