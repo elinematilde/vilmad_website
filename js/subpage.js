@@ -57,7 +57,7 @@ function showMushrooms(data) {
 
     // Append
     console.log("append");
-    const parentElement = document.querySelector(".produktliste");
+    const parentElement = document.querySelector(".produktliste2");
     parentElement.appendChild(myClone);
 
     //fra yt tutorial
