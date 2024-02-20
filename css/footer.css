@@ -1,0 +1,75 @@
+footer {
+  display: flex;
+  background-color: rgba(233, 189, 211, 0.291);
+  padding: 2%;
+}
+
+footer img {
+    width: 150px;
+    height: auto;
+    
+}
+
+footer h2{
+    color: rgba(152, 189, 193, 1);
+  text-decoration: none;
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7rem;
+}
+
+footer .line{
+    width: 500%;
+    height: 2px;
+    
+    background-color: rgba(233, 189, 211, 1);
+  
+}
+.samarbejde_con{
+    margin-left: 2%;
+}
+.samarbejde_con_1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.instagram_facebook{
+    grid-column: 5;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.icons{
+    display: flex;
+    justify-content: baseline;
+    justify-content: space-between;
+}
+
+
+
+
+/**div><img src="footer_logo" alt="logo"></div>
+        <div class="samarbejde_con">
+            <div>
+                <div>
+                    <h2>samarbejde</h2>
+                </div>
+                <div>logo 1
+                </div>
+                <div>logo 2</div>
+            </div>
+
+            <div class="line"></div>
+
+            <div>
+                <div>icon</div>
+                <div>icon</div>
+                <div>icon</div>
+                <div>icon</div>
+                <div>icon</div>
+            </div>
+
+        </div>
