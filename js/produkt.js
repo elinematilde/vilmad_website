@@ -1,26 +1,3 @@
-// const urlParams = new URLSearchParams(window.location.search);
-// const id = urlParams.get("id");
-
-// const url = "https://pkjbphmcnorwfmrlmfci.supabase.co/rest/v1/VildMadData?" + id;
-
-// fetch(url, {
-//   method: "GET",
-//   headers: {
-//     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBramJwaG1jbm9yd2ZtcmxtZmNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3MjUyNzQsImV4cCI6MjAyMzMwMTI3NH0.nLeOP6ZBdwY2RvoWnk5x8a-WlwRSbbsoQKcrRkSCBHI",
-//   },
-// })
-//   .then((res) => res.json())
-//   .then(showMush);
-
-// function showMush() {
-//   console.log(id);
-//   showMushroom();
-// }
-// function showMush(mush) {
-//   console.log(mush.id);
-//   document.querySelector("h2").textContent = mush.id;
-// }
-
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
