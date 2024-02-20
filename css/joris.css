@@ -17,12 +17,6 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.produktliste2 {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-
 /* category style */
 .choose-cat {
   color: #2f2f2f;
@@ -252,14 +246,11 @@ h2 {
 .cta1:hover {
   box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32) inset;
   transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  background-color: #f291c0;
-  color: #1abeae;
+  transform: scale(1.1);
 }
 .cta1:active {
   box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32) inset;
   transform: scale(0.95);
-  color: #f35a5a;
 }
 
 /* DARKMODE */
