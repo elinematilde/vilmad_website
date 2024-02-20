@@ -1,13 +1,16 @@
 footer {
   display: flex;
-  background-color: rgba(233, 189, 211, 0.291);
+  background-color: rgb(252 240 246 / 29%);
   padding: 2%;
+  justify-content: center;
+  gap:5%;
+ 
 }
 
 footer img {
-    width: 150px;
+    width: 200px;
     height: auto;
-    
+    padding-bottom: 15%;
 }
 
 footer h2{
@@ -20,33 +23,59 @@ footer h2{
 }
 
 footer .line{
-    width: 500%;
+    width: 100%;
     height: 2px;
     
     background-color: rgba(233, 189, 211, 1);
   
 }
 .samarbejde_con{
-    margin-left: 2%;
+    margin-top: 1%;
 }
 .samarbejde_con_1{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    cursor: pointer; /* Change mouse cursor to pointer */
     
+}
+
+.logo_img img:hover{
+cursor: pointer; /* Change mouse cursor to pointer */
 }
 
 .instagram_facebook{
-    grid-column: 5;
+       grid-column: 5;
     display: flex;
-    justify-content: space-between;
+    padding-top: 11%;
+    padding-left: 39%;
+    gap: 21%;
+    cursor: pointer; /* Change mouse cursor to pointer */
+   
     
 }
 
+.instagram_facebook img{
+    width: 120%;
+    height: auto;
+}
+
+
+
 .icons{
     display: flex;
-    justify-content: baseline;
-    justify-content: space-between;
+   
+   margin-top: 2%;
+   cursor: pointer; /* Change mouse cursor to pointer */
+   
 }
+.icons img{
+    width: 80%;
+    height:auto;
+    
+}
+
+
+
 
 
 

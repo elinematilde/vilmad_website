@@ -1,54 +1,171 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Mansalva&family=Special+Elite&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="generel.css" />
-    <link rel="stylesheet" href="menu.css" />
-    <link rel="stylesheet" href="../css/bastian.css" />
-    <link rel="stylesheet" href="/css/generel.css" />
-    <link rel="stylesheet" href="/css/menu.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Mansalva&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="../css/bastian.css">
+    <link rel="stylesheet" href="/generel.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <title>Svamp</title>
-  </head>
+</head>
 
-  <body class="gridbaggrund">
+<body class="gridbaggrund">
+    <header>
+        <div class="topmenu_container">
+
+
+            <div class="sprog_container">
+                <a href="index.html">
+                    DA /
+
+                </a>
+                <a href="index.html">
+                    EN
+                </a>
+            </div>
+            <div class="profil_icon">
+                <img src="/img/svg/profil_icon.svg" alt="profil">
+
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="kategori.html">Råvarer</a></li>
+                <li><a href="kategori.html">Opskrifter</a></li>
+                <li class="logo">
+                    <a href="index.html">
+                        <img src="/img/svg/logo_svg.svg" alt="logo">
+                    </a>
+                </li>
+                <li><a href="kategor.html">Viden</a></li>
+                <li><a href="kategor.html">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
     <main>
-      <div class="button_column">
         <button class="goBackLink" href="" onclick="goBack()">Go back</button>
-      </div>
-      <span class="divider"></span>
-      <article class="grid_card">
-        <!-- <a href="javascript:goBack();">back</a> -->
+        </div>
+        <span class="divider"></span>
+        <article class="grid_card">
+            <!-- <a href="javascript:goBack();">back</a> -->
+            <h1>TITLE</h1>
+            <img class="img1" src="" alt="Type">
+            <h2>This mushroom grows during <span class="mushSeason">SEASON</span></h2>
+            <p class="description">DESCRIPTION</p>
+            <h4>You will find this <span class="headCatagory"></span> in a <span class="harvestingLandscape">HARVESTING
+                    LANDSCAPE</span></h4>
+            <img class="img2" src="" alt="This is a ">
+            </div>
+            <div class="idcolumn">
+                <p class="systemid">System ID= <span class="showId systemid"></span></p>
+                <img class="barcode" src="../bastian_img/barcode.png">
+            </div>
 
-        <div>
-          <img class="img1 svampebillede" src="" alt="Type" />
-        </div>
-        <div>
-          <h1 class="produkth1">TITLE</h1>
-          <h2 class="produkth2">
-            This mushroom grows during
-            <span class="mushSeason sæsoner">SEASON</span>
-          </h2>
-          <p class="description">DESCRIPTION</p>
-          <h4>
-            You will find this <span class="headCatagory"></span> in a
-            <span class="harvestingLandscape">HARVESTING LANDSCAPE</span>
-          </h4>
-          <img class="img2" src="" alt="This is a " />
-        </div>
-        <div class="idcolumn">
-          <p class="systemid">
-            System ID= <span class="showId systemid"></span>
-          </p>
-          <img class="barcode" src="../bastian_img/barcode.png" />
-        </div>
-      </article>
+
+
+        </article>
     </main>
-  </body>
-  <script src="/js/produkt.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+
+        article {
+            display: contents;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: subgrid;
+            grid-row: span 4;
+
+            background-color: #f3f5f5;
+            box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
+        }
+
+        article .img1 {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+        }
+
+        article .img2 {
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+            margin-left: auto;
+        }
+
+        main h1,
+        h2,
+        h4,
+        div,
+        p {
+            padding: 0.5rem;
+        }
+    </style>
+    <footer>
+
+
+        <div class="logo_img">
+
+            <a href="index.html"><img src="/img/svg/footer_logo.svg" alt="logo_footer"></a>
+
+        </div>
+        <div class="samarbejde_con">
+
+            <div class="samarbejde_con_1">
+                <div class="samarbejde_titel">
+
+                    <h2>I samarbejde med</h2>
+
+                </div>
+                <div class="instagram_facebook">
+                    <div><img src="/img/svg/instagram.svg" alt="insta">
+                    </div>
+                    <div><img src="/img/svg/facebook.svg" alt="insta"></div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="icons">
+                <div><img src="/img/svg/byhoest.svg" alt="icon"></div>
+                <div><img src="/img/svg/frilufts.svg" alt="icon"></div>
+                <div><img src="/img/svg/gojoin.svg" alt="icon"></div>
+                <div><img src="/img/svg/naturvejleder.svg" alt="icon"></div>
+                <div><img src="/img/svg/supertusch.svg" alt="icon"></div>
+                <div><img src="/img/svg/tombola.svg" alt="icon"></div>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+<script src="/js/produkt.js"></script>
+
 </html>
