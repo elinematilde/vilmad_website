@@ -248,11 +248,14 @@ h2 {
 .cta1:hover {
   box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32) inset;
   transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transform: scale(1.1);
+
+  background-color: #f291c0;
+  color: #1abeae;
 }
 .cta1:active {
   box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32) inset;
   transform: scale(0.95);
+  color: #f35a5a;
 }
 
 /* DARKMODE */
@@ -270,8 +273,4 @@ h2 {
   img:hover {
     opacity: 1;
   }
-}
-
-.s {
-  color: red;
 }
