@@ -95,7 +95,7 @@ p {
 
 #blomster_ydrecirkel {
   grid-area: 2 / 2 / 3 / 5;
-  align-self: start;
+  align-self: end;
   justify-self: center;
   border: 5px solid #eedbfe;
 }
@@ -106,7 +106,7 @@ p {
 #bær_ydrecirkel {
   grid-area: 3 / 1 / 4 / 3;
   justify-self: center;
-  align-self: start;
+  align-self: end;
   border: 5px solid #ffd3eb;
 }
 #bær_cirkel {
@@ -114,7 +114,7 @@ p {
 }
 
 #strandurter_ydrecirkel {
-  grid-area: 3 / 3 / 6 / 4;
+  grid-area: 2 / 3 / 6 / 4;
   justify-self: start;
   align-self: center;
   border: 5px solid #baec50;
