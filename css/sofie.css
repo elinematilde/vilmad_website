@@ -6,12 +6,25 @@ main {
   background-image: url(../bastian_img/Grid_baggrund.png);
 }
 
-.grid {
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  height: 80%;
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    height: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    display: block;
+  }
+
+p {
+  font-size: 0.5rem;
+}
+
 }
 
 h1 {
@@ -29,6 +42,7 @@ p {
 }
 
 .tekst_boks {
+  margin: 25px;
   border-radius: 30px;
   border: 10px solid #fff;
   background-color: #ffff;
@@ -39,7 +53,7 @@ p {
 
 .clips {
   position: absolute;
-  transform: translate(700px, -125%);
+  transform: translate(715px, -132%);
   width: 50px;
 }
 
@@ -60,8 +74,8 @@ p {
 }
 
 .ydre_cirkel {
-  width: 423px;
-  height: 423px;
+  width: 440px;
+  height: 440px;
   position: relative;
   border-radius: 50%;
 }
@@ -91,12 +105,12 @@ p {
 #svamp_ydrecirkel {
   grid-area: 2 / 1 / 3 / 2;
   align-self: end;
-  justify-self: start;
+  justify-self: center;
   border: 5px solid #a0ec50;
 }
 
 #svamp_cirkel {
-  border: 12px solid #ffd3eb;
+  border: 20px solid rgba(255, 211, 235, 0.76);
 }
 
 #blomster_ydrecirkel {
@@ -106,7 +120,7 @@ p {
   border: 5px solid #eedbfe;
 }
 #blomster_cirkel {
-  border: 12px solid #a6ded8;
+  border: 20px solid rgba(166, 222, 216, 0.76);
 }
 
 #bær_ydrecirkel {
@@ -116,7 +130,7 @@ p {
   border: 5px solid #ffd3eb;
 }
 #bær_cirkel {
-  border: 12px solid #e9f35a;
+  border: 20px solid rgba(233, 243, 90, 0.76);
 }
 
 #strandurter_ydrecirkel {
@@ -126,5 +140,6 @@ p {
   border: 5px solid #baec50;
 }
 #strandurter_cirkel {
-  border: 12px solid #e1befd;
+  border: 20px solid rgba(225, 190, 253, 0.76);
 }
+.s{s}
