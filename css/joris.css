@@ -127,19 +127,14 @@ button {
   padding: 0.3%;
   margin-left: 1%;
 
-  border-color: #dcacc3;
-  /* background-color: #fad0e7; */
-  border-radius: 4px;
+  border-color: transparent; /* background-color: #fad0e7; */
+  border-radius: 0px;
   /* box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32); */
   transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
   line-height: -1.5;
 }
 
 button:hover {
-  box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32) inset;
-  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  background-color: #f291c0;
   color: #1abeae;
 }
 button:active {
