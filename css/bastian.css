@@ -1,5 +1,5 @@
 .gridbaggrund {
-  background-image: url(../bastian_img/Grid_baggrund.png);
+  background-image: url(../img/Grid_baggrund.png);
 }
 .button_column {
     display: grid;
@@ -10,10 +10,13 @@
     grid-template-columns: 1fr 1fr;
 }
 .ikon_grid {
-    display: gid;
+    display: grid;
     grid-template-columns: 1fr 10fr;
 }
-
+.container img {
+  float: left; /* Flyt billedet til venstre */
+  margin-right: 10px; /* Tilføj en margen til højre for at adskille billedet fra teksten */
+}
 .lokationtxt {
     background-color: white;
     padding-left: 50px;
@@ -99,6 +102,9 @@
 }
 .divider {
     padding:7%;
+}
+.divider {
+  padding:2%;
 }
 .systemid {
     color: white;
