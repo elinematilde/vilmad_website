@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Mansalva&family=Special+Elite&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="generel.css">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="../css/bastian.css">
-    <link rel="stylesheet" href="/generel.css">
+    <link rel="stylesheet" href="/css/generel.css">
+
     <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/bastian.css">
+    <link rel="stylesheet" href="/css/generel.css">
+    <link rel="stylesheet" href="/css/animations.css">
     <link rel="stylesheet" href="/css/footer.css">
     <title>Svamp</title>
 </head>
 
-<body class="gridbaggrund">
+<body>
     <header>
         <div class="topmenu_container">
 
@@ -55,32 +56,45 @@
             </div>
         </nav>
     </header>
-<body class="gridbaggrund">
+
     <main>
-        <div class="button_column">
-        <button class="goBackLink" href="" onclick="goBack()">Go back</button>
-    </div>
+        <div onclick="goBack()" class="goBackLink">
+            <button class="" href="" onclick="goBack()">Go back</button>
+            <img class="arrow" src="/img/turn-right-arrow.svg" alt="">
+            <img src="/img/pinkpaper.png" class="pinkpaper"></img>
+        </div>
         <span class="divider"></span>
         <article class="grid_card">
-            <!-- <a href="javascript:goBack();">back</a> -->
-        
+            <!-- Polaroid -->
+            <a class="card rotate1" href="#">
+                <article>
+                    <img class="pinImg" src="https://pngimg.com/d/pin_PNG64.png" alt="">
+                    <img class="mush-img"
+                        src="https://vildmadv2.vps.webdock.io/application/files/6416/2437/2772/Honnningsvamp_ravarekort_app.png"
+                        alt="Picture of a mushroom">
+                    <header>
+                        <h2 class="title">Mushroom Title</h2>
+                    </header>
+                </article>
+            </a>
+            <!-- Polaroid slut -->
+
+            </div>
             <div>
-            <img class="img1 svampebillede" src="" alt="Type">
-        </div>
-            <div>
-            <h1 class="produkth1">TITLE</h1>
-            <img class="sæsonikon" src="../bastian_img/Ikonweb.svg" style="width:50px;">
-            <h2 class="lokationtxt"><span class="mushSeason sæsoner">SEASON</span></h2>
-        <img class="lokationikon" src="../bastian_img/lokation.svg" style="width:50px;">
-        <h4 class="lokationtxt">You will find this <span class="headCatagory"></span> in a <span class="harvestingLandscape">HARVESTING
-            LANDSCAPE</span></h4>
-            <p class="description">DESCRIPTION</p>
-            
-            <img class="img2 landskabbillede" src="" alt="This is a ">
-        </div>
+                <h1 class="produkth1">TITLE</h1>
+                <img class="sæsonikon" src="../bastian_img/Ikonweb.svg" style="width:50px;">
+                <h2 class="lokationtxt"><span class="mushSeason sæsoner">SEASON</span></h2>
+                <img class="lokationikon" src="../bastian_img/lokation.svg" style="width:50px;">
+                <h4 class="lokationtxt">You will find this <span class="headCatagory"></span> in a <span
+                        class="harvestingLandscape">HARVESTING
+                        LANDSCAPE</span></h4>
+                <p class="description">DESCRIPTION</p>
+
+                <img class="img2 landskabbillede" src="" alt="This is a ">
+            </div>
             <div class="idcolumn">
-            <p class="systemid">System ID= <span class="showId systemid"></span></p>
-            <img class="barcode" src="../bastian_img/barcode.png">
+                <p class="systemid">System ID= <span class="showId systemid"></span></p>
+                <img class="barcode" src="../bastian_img/barcode.png">
             </div>
 
 
@@ -88,7 +102,7 @@
         </article>
     </main>
 
-</body>
+
 
     <footer>
 
@@ -126,11 +140,11 @@
             </div>
 
         </div>
-
-    </footer>
-    <script src="/js/menu.js"></script>
-    <script src="/js/produkt.js"></script>
 </body>
+</footer>
+<script src="/js/menu.js"></script>
+<script src="/js/produkt.js"></script>
+
 <script src="/js/produkt.js"></script>
 
 </html>

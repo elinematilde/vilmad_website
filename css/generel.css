@@ -1,3 +1,11 @@
+body {
+  background-image: url(/img/Grid_baggrund.png);
+}
+
+main {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
 /****** FONTE ******/
 h1 {
   font-family: "Jockey One", sans-serif;
@@ -38,11 +46,163 @@ p {
   margin-top: 0.5%;
 }
 
-body {
-  background-image: url(/img/Grid_baggrund.png);
+/* DARKMODE */
+.darkMode {
+  background-image: url(/img/darkmode_baggrund.png);
+  /* background-color: #4a4a4a;
+  color: #dedede; */
+  transition: opacity 0.5s ease-in-out;
 }
 
-main {
-  margin-left: 5rem;
-  margin-right: 5rem;
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: 0.75;
+    transition: opacity 0.2s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
+
+/* Card style */
+article {
+  display: contents;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+
+  background-color: rgba(233, 243, 90, 1);
+  border: solid rgb(206, 215, 80) 2px;
+  box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
+  border-radius: 2%;
+  margin: auto;
+  width: 15rem;
+
+  text-decoration: none;
+
+  max-height: 100%;
+}
+
+article .mush-img {
+  width: 90%;
+  height: 160%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  margin: auto;
+
+  filter: sepia(0.6);
+
+  /* Virker ikke helt */
+  box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
+  -webkit-box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
+  -moz-box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
+
+  border-radius: 5px;
+}
+
+.card h1,
+h2 {
+  padding: 0.5rem;
+}
+
+.pinImg {
+  height: auto;
+  width: 20%;
+  margin: auto;
+  padding-top: 0.2rem;
+}
+.card header h2 {
+  background-color: rgb(220, 228, 103);
+  color: rgb(80, 80, 80);
+  font-size: 1.5rem;
+  margin: 0.75rem;
+  margin-top: 28%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* GO BACK BUTTON */
+button {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #656565;
+  background-color: #ffffff;
+  padding: 0.3%;
+  margin-left: 1%;
+
+  border-color: transparent; /* background-color: #fad0e7; */
+  border-radius: 0px;
+  /* box-shadow: 3px 3px 3px 0px rgba(138, 138, 138, 0.32); */
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  line-height: -1.5;
+}
+
+button:hover {
+  color: #1abeae;
+}
+button:active {
+  box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32) inset;
+  transform: scale(0.95);
+  color: #f35a5a;
+}
+.goBackLink {
+  position: sticky;
+  top: auto;
+  left: 0;
+  width: auto;
+  z-index: 4;
+  opacity: 0.8;
+  transform: rotate(-10deg);
+}
+.goBackLink button {
+  position: absolute;
+  top: -5.9rem;
+  left: 0;
+
+  text-align: center;
+  background-color: transparent;
+  border: transparent;
+  padding: 2rem;
+  font-family: "Mansalva", sans-serif;
+  font-size: 1rem;
+}
+.pinkpaper {
+  position: absolute;
+  top: -8rem;
+  left: 0;
+  width: 10rem;
+  height: auto;
+  background-image: url("/img/pinkpaper.png");
+  z-index: -3;
+  transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.arrow {
+  position: absolute;
+  left: 2rem;
+  top: -5rem;
+  width: 5rem;
+  transform: rotateY(180deg);
+  z-index: 7;
+  transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.goBackLink:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.goBackLink:hover .pinkpaper {
+  transform: rotate(15deg);
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.goBackLink:hover button {
+  transform: scale(1.2);
+
+  transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
