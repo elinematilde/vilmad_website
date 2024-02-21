@@ -64,67 +64,6 @@ p {
   }
 }
 
-/* Card style */
-article {
-  display: contents;
-}
-
-.card {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: subgrid;
-  grid-row: span 4;
-
-  background-color: rgba(233, 243, 90, 1);
-  border: solid rgb(206, 215, 80) 2px;
-  box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
-  border-radius: 2%;
-  margin: auto;
-  width: 15rem;
-
-  text-decoration: none;
-
-  max-height: 100%;
-}
-
-article .mush-img {
-  width: 90%;
-  height: 160%;
-  object-fit: cover;
-  aspect-ratio: 16/9;
-  margin: auto;
-
-  filter: sepia(0.6);
-
-  /* Virker ikke helt */
-  box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
-  -webkit-box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
-  -moz-box-shadow: 78px 54px 46px 38px rgba(0, 0, 0, 0.66) inset;
-
-  border-radius: 5px;
-}
-
-.card h1,
-h2 {
-  padding: 0.5rem;
-}
-
-.pinImg {
-  height: auto;
-  width: 20%;
-  margin: auto;
-  padding-top: 0.2rem;
-}
-.card header h2 {
-  background-color: rgb(220, 228, 103);
-  color: rgb(80, 80, 80);
-  font-size: 1.5rem;
-  margin: 0.75rem;
-  margin-top: 28%;
-  text-align: center;
-  border-radius: 5px;
-}
-
 /* GO BACK BUTTON */
 button {
   font-family: "Jockey One", sans-serif;
