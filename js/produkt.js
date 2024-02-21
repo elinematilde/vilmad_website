@@ -18,16 +18,16 @@ function showProduct(data) {
 
   const oneMushroom = data[0];
 
-  document.querySelector("h1").textContent = oneMushroom.title;
+  document.querySelector(".produkth1").textContent = oneMushroom.title;
+  document.querySelector(".title").textContent = oneMushroom.title;
   document.querySelector(".showId").textContent = oneMushroom.id;
   document.querySelector(".mushSeason").textContent = oneMushroom.seasons;
-  document.querySelector(".img1").src = `${oneMushroom.mush_img}`;
+  document.querySelector(".mush-img").src = `${oneMushroom.mush_img}`;
   document.querySelector(".description").textContent = oneMushroom.description;
-  document.querySelector(".harvestingLandscape").textContent = oneMushroom.harvesting_landscapes;
+  document.querySelector(".harvestingLandscape1").textContent = oneMushroom.harvesting_landscapes;
+  document.querySelector(".harvestingLandscape2").textContent = oneMushroom.harvesting_landscapes;
   document.querySelector(".headCatagory").textContent = oneMushroom.head_category;
-  document.querySelector(".img2").src = `${oneMushroom.landscape_img}`;
-
-  //document.querySelector(".goBackLink").setAttribute("href", `sub-produktliste.html?seasons=${oneMushroom.seasons[0]}`);
+  document.querySelector(".card .img2").src = `${oneMushroom.landscape_img}`;
 
   if ((oneMushroom.season_1 = 5)) {
     console.log("June");
@@ -37,4 +37,10 @@ function showProduct(data) {
 function goBack() {
   console.log("back");
   window.history.back();
+}
+
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("darkMode");
+  console.log("dark/light");
 }
