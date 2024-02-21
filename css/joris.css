@@ -168,7 +168,7 @@ button:hover {
 button:active {
   box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32) inset;
   transform: scale(0.95);
-  color: #f35a5a;
+  color: #0c796e;
 }
 .goBackLink {
   position: sticky;
@@ -247,7 +247,7 @@ button:active {
 .cta1:active {
   box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32) inset;
   transform: scale(0.95);
-  color: #f35a5a;
+  color: #0c796e;
 }
 
 /* DARKMODE */
