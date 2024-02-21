@@ -66,8 +66,8 @@ section {
 }
 
 .pins:first-child {
-  transform: scaleX(1);
-  width: 2%;
+  transform: scaleX(-1);
+  width: 4%;
 
   height: auto;
 }
