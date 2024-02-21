@@ -57,17 +57,19 @@ section {
   overflow-x: auto;
   padding: 1rem;
   box-shadow: 0 0 10px rgb(130, 125, 125);
+  margin-top: 3rem;
 }
 
 .pins {
-  width: 7%;
+  transform: scaleX(1);
+  width: 6%;
 
   height: auto;
 }
 
 .pins:first-child {
   transform: scaleX(-1);
-  width: 4%;
+  width: 6%;
 
   height: auto;
 }
