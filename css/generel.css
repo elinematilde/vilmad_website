@@ -1,3 +1,11 @@
+body {
+  background-image: url(/img/Grid_baggrund.png);
+}
+
+main {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
 /****** FONTE ******/
 h1 {
   font-family: "Jockey One", sans-serif;
@@ -38,11 +46,20 @@ p {
   margin-top: 0.5%;
 }
 
-body {
-  background-image: url(/img/Grid_baggrund.png);
+/* DARKMODE */
+.darkMode {
+  background-image: url(/img/darkmode_baggrund.png);
+  /* background-color: #4a4a4a;
+  color: #dedede; */
+  transition: opacity 0.5s ease-in-out;
 }
 
-main {
-  margin-left: 5rem;
-  margin-right: 5rem;
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: 0.75;
+    transition: opacity 0.2s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
 }
