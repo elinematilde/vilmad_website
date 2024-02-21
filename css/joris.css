@@ -3,6 +3,34 @@
   padding: 0;
 }
 
+/* BANNER */
+
+.banner_con {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner_con h1 {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #656565;
+  margin: 0; /* Reset margin to remove gap */
+}
+
+.banner_con img {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  object-fit: cover;
+}
+
 .flex1 {
   display: flex;
   justify-content: space-around;
@@ -65,8 +93,8 @@ article {
   grid-template-rows: subgrid;
   grid-row: span 4;
 
-  background-color: rgba(233, 243, 90, 1);
-  border: solid rgb(206, 215, 80) 2px;
+  background-color: rgb(215 225 216);
+  border: solid rgb(149, 185, 155) 2px;
   box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
   border-radius: 2%;
   margin: auto;
@@ -106,7 +134,7 @@ h2 {
   padding-top: 0.2rem;
 }
 .card header h2 {
-  background-color: rgb(220, 228, 103);
+  background-color: rgb(196, 208, 197);
   color: rgb(80, 80, 80);
   font-size: 1.5rem;
   margin: 0.75rem;
