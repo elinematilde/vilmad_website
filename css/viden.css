@@ -16,6 +16,14 @@ p {
   font-size: 1rem;
 }
 
+.tekst {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #6e6e6e; /* Juster tekstfarven efter behov */
+  font-weight: bold; /* Juster tekstvægten efter behov */
+  z-index: 1;
+}
+
 main {
   background-image: url(../img/Grid_baggrund.png);
 }
@@ -25,14 +33,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     margin-left: 50px;
-  }
-
-  .tekst {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: #6e6e6e; /* Juster tekstfarven efter behov */
-    font-weight: bold; /* Juster tekstvægten efter behov */
-    z-index: 1;
   }
 
   #tekst_sankestil {
@@ -49,6 +49,16 @@ main {
     align-self: start;
   }
 
+  #tekst_info {
+    left: 40%;
+    top: 55%;
+    rotate: -1.2deg;
+  }
+
+  #info {
+    width: 50%;
+    margin-left: 40%;
+  }
   #god_sankestil {
     grid-area: 2 / 1 / 4 / 2;
     align-self: left;
@@ -70,9 +80,9 @@ main {
   }
 
   #guide_tekst {
-    left: 20%;
-    top: 54%;
-    rotate: deg;
+    left: 37%;
+    top: 50%;
+    rotate: 4deg;
   }
 
   #tekst_vildmad {
@@ -86,10 +96,35 @@ main {
     display: block;
   }
 
-  #tekst_sankestil {
+  li {
+    margin-right: 20%;
+  }
+
+  #tekst_info {
     left: 50%;
-    top: 50%;
+    top: 55%;
+    rotate: -1.2deg;
+  }
+
+  #tekst_vildmad {
+    left: 39%;
+    top: 90%;
+  }
+
+  #info {
+    width: 100%;
+  }
+
+  #tekst_sankestil {
+    left: 40%;
+    top: 55%;
     rotate: 1deg;
+  }
+
+  #guide_tekst {
+    left: 40%;
+    top: 54%;
+    rotate: 4deg;
   }
 
   li,
@@ -97,16 +132,6 @@ main {
   h3,
   p {
     font-size: 0.6rem;
-  }
-
-  .tekst {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    color: #6e6e6e; /* Juster tekstfarven efter behov */
-    font-size: px; /* Juster tekststørrelsen efter behov */
-    font-weight: bold; /* Juster tekstvægten efter behov */
-    z-index: 1;
   }
 }
 
@@ -124,12 +149,6 @@ img {
 #lille_seddel_tekst {
   left: 50%;
   top: 40%;
-}
-
-#guide_tekst {
-  left: 45%;
-  top: 50%;
-  rotate: 5deg;
 }
 
 h2,
