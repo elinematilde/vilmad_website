@@ -11,7 +11,7 @@
 }
 .ikon_grid {
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 1fr 15fr;
 }
 .container img {
   float: left; /* Flyt billedet til venstre */
@@ -21,10 +21,11 @@
     background-color: white;
     padding-left: 50px;
     font-size: 14px;
+    border-radius: 30px;
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
 .barcode {
   max-height: 0%;
   position: absolute;
@@ -53,7 +54,7 @@
     position: absolute;
 }
 }
-@media (min-width: 700px) {
+@media (min-width: 1100px) {
     .grid_card {
         display: grid;
         grid-template-columns: 1fr 1fr 0.8fr;
@@ -72,8 +73,8 @@
         border-color: white;
     }
     .landskabbillede {
-        max-height:0%;
-        position: absolute;
+        max-height:10%;
+        position: 
     }
     .lokationikon {
         max-width: 100%;
@@ -99,6 +100,7 @@
     background-color: white;
     padding: 8px;
     padding-left: 55px;
+    border-radius: 30px;
 }
 .divider {
     padding:7%;
