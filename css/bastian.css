@@ -20,6 +20,7 @@
     font-size: 14px;
 }
 
+
 @media (max-width: 700px) {
 .barcode {
   max-height: 0%;
