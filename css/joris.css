@@ -93,7 +93,7 @@ article {
   grid-template-rows: subgrid;
   grid-row: span 4;
 
-  background-color: rgb(215 225 216);
+  background-color: rgb(0, 255, 26);
   border: solid rgb(149, 185, 155) 2px;
   box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
   border-radius: 2%;
