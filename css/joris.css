@@ -30,6 +30,29 @@
   z-index: 0;
   object-fit: cover;
 }
+/* BANNER FORSIE */
+.forside_titel {
+  position: relative; /* Set the container to relative positioning */
+}
+
+.forside_titel h1 {
+  position: absolute; /* Set the text to absolute positioning */
+  top: 40%; /* Move the text 50% down from the top of its containing element */
+  left: 50%; /* Move the text 50% from the left of its containing element */
+  transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+  margin: 0; /* Remove any default margin */
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.5rem;
+  color: #656565;
+}
+
+.forside_titel img {
+  display: block; /* Make sure the image is treated as a block element */
+  width: 100%; /* Make the image take the full width of its container */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
 
 .flex1 {
   display: flex;
