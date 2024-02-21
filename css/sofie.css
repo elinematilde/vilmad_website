@@ -5,13 +5,14 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 0;
   } */
+}
 
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-around;
-  }
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
 }
 
 .tekst_boks {
