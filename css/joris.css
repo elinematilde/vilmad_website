@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-image: url(../bastian_img/Grid_baggrund.png);
-}
 
 .flex1 {
   display: flex;
@@ -32,32 +29,6 @@ section {
   overflow-x: auto;
   padding: 1rem;
   box-shadow: 0 0 10px rgb(130, 125, 125);
-}
-
-.col1 h3 {
-  font-family: "Jockey One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2rem;
-  margin-left: 1.1%;
-  color: #595656;
-}
-.col2 h3 {
-  font-family: "Jockey One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.1rem;
-  margin-left: 1.1%;
-  color: #595656;
-}
-
-.col3 h3 {
-  font-family: "Jockey One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.1rem;
-
-  color: #595656;
 }
 
 .pins {
@@ -142,72 +113,6 @@ h2 {
   margin-top: 28%;
   text-align: center;
   border-radius: 5px;
-}
-
-/* ANIMATIONS */
-.card:hover h2 {
-  color: #1abeae;
-}
-.card:active h2 {
-  color: red;
-}
-
-.card:hover {
-  animation-name: card_hover_kf;
-  animation-duration: 0.4s;
-  animation-timing-function: cubic-bezier(0.13, 0.67, 0.48, 0.89);
-  animation-fill-mode: both;
-  transform-origin: top;
-}
-
-@keyframes card_hover_kf {
-  from {
-    transform: rotate();
-  }
-  to {
-    transform: rotate(2deg);
-  }
-}
-
-.card {
-  animation-name: card_hover_default_kf;
-  animation-duration: 0.2s;
-  animation-timing-function: cubic-bezier(0.13, 0.67, 0.48, 0.89);
-  transform-origin: top;
-}
-
-@keyframes card_hover_default_kf {
-  from {
-    transform: rotate(3deg);
-  }
-  to {
-    transform: rotate();
-  }
-}
-
-/* rotate vinkler */
-.rotate1 {
-  transform: rotate(4deg);
-}
-
-.rotate2 {
-  transform: rotate(-2deg);
-}
-
-.rotate3 {
-  transform: rotate(1deg);
-}
-
-.rotate4 {
-  transform: rotate(-4deg);
-}
-
-.rotate5 {
-  transform: rotate(3deg);
-}
-
-.rotate6 {
-  transform: rotate(-1deg);
 }
 
 /* Buttons */

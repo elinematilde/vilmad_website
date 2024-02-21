@@ -1,57 +1,32 @@
-body {
-  display: flex;
-}
-
-main {
-  background-image: url(../bastian_img/Grid_baggrund.png);
-}
-
-@media (min-width: 700px) {
-  .grid {
+@media (min-width: 800px) {
+  /* .grid {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0;
-    height: 80%;
-  }
-}
+  } */
 
-@media (max-width: 700px) {
   .grid {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
   }
-
-  p {
-    font-size: 0.5rem;
-  }
-}
-
-h1 {
-  font-family: "Jockey One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #5b5050;
-}
-
-p {
-  color: #717c7a;
-  font-family: "Jockey One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .tekst_boks {
-  margin: 25px;
+  margin: 2rem;
   border-radius: 30px;
   border: 10px solid #fff;
   background-color: #ffff;
-  height: 200px;
-  grid-area: 1 / 1 / 2 / 6;
+  height: 20%;
+  z-index: 20;
   text-align: center;
 }
 
 .clips {
-  position: absolute;
+  top: 30%;
+  left: 20%;
   transform: translate(715px, -132%);
   width: 50px;
 }
@@ -70,6 +45,7 @@ p {
   height: 400px;
   border-radius: 50%;
   overflow: hidden;
+  margin: auto;
 }
 
 .ydre_cirkel {
@@ -77,12 +53,14 @@ p {
   height: 440px;
   position: relative;
   border-radius: 50%;
+  margin: auto;
 }
 
 .cirkel img {
   width: 100%;
   height: auto;
   display: block;
+  margin: auto;
 }
 
 .cirkel p {

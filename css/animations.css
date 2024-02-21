@@ -1,0 +1,65 @@
+/* ANIMATIONS */
+.card:hover h2 {
+  color: #1abeae;
+}
+.card:active h2 {
+  color: red;
+}
+
+.card:hover {
+  animation-name: card_hover_kf;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.13, 0.67, 0.48, 0.89);
+  animation-fill-mode: both;
+  transform-origin: top;
+}
+
+@keyframes card_hover_kf {
+  from {
+    transform: rotate();
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
+
+.card {
+  animation-name: card_hover_default_kf;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.13, 0.67, 0.48, 0.89);
+  transform-origin: top;
+}
+
+@keyframes card_hover_default_kf {
+  from {
+    transform: rotate(3deg);
+  }
+  to {
+    transform: rotate();
+  }
+}
+
+/* rotate vinkler */
+.rotate1 {
+  transform: rotate(4deg);
+}
+
+.rotate2 {
+  transform: rotate(-2deg);
+}
+
+.rotate3 {
+  transform: rotate(1deg);
+}
+
+.rotate4 {
+  transform: rotate(-4deg);
+}
+
+.rotate5 {
+  transform: rotate(3deg);
+}
+
+.rotate6 {
+  transform: rotate(-1deg);
+}
