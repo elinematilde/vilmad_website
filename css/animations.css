@@ -39,6 +39,40 @@
   }
 }
 
+/* CIRKEL ANIMATION */
+.cirkel,
+.ydre_cirkel {
+  animation-name: cirkel_default_kf;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.13, 0.67, 0.48, 0.89);
+  animation-fill-mode: both;
+}
+@keyframes cirkel_default_kf {
+  from {
+    transform: scale(0.98);
+  }
+  to {
+    transform: scale();
+  }
+}
+
+.cirkel,
+.ydre_cirkel:hover {
+  animation-name: cirkel_hover_kf;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.13, 0.67, 0.48, 0.89);
+  animation-fill-mode: both;
+}
+
+@keyframes cirkel_hover_kf {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.98);
+  }
+}
+
 /* rotate vinkler */
 .rotate1 {
   transform: rotate(4deg);
