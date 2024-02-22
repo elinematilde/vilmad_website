@@ -18,12 +18,18 @@
   margin-right: 10px; /* Tilføj en margen til højre for at adskille billedet fra teksten */
 }
 .lokationtxt {
-    background-color: white;
-    padding-left: 50px;
-    font-size: 14px;
-    border-radius: 30px;
+  background-color: white;
+  padding-left: 30px;
+  font-size: 14px;
+  border-radius: 30px;
+  margin-inline-end: 5%;
 }
-
+.produktbskr {
+  margin-inline-end: 5%;
+  margin-inline-start: 5%;
+  margin-block-start: 10%;
+  font-size: 20px;
+}
 
 @media (max-width: 1100px) {
 .barcode {
@@ -91,21 +97,23 @@
 .produkth1 {
   color: #1abeae;
   text-align: center;
+  font-family: "Jockey One", sans-serif;
 }
 .produkth2 {
   font-size: 15px;
 }
 .sæsoner {
-    font-size: 14px;
-    background-color: white;
-    padding: 8px;
-    padding-left: 55px;
-    border-radius: 30px;
+  font-size: 14px;
+  background-color: white;
+  padding: 8px;
+  padding-left: 30px;
+  border-radius: 30px;
+  margin-inline-end: 5%;
 }
 .divider {
     padding:7%;
 }
-.divider {
+.divider2 {
   padding:2%;
 }
 .systemid {
