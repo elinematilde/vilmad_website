@@ -294,3 +294,10 @@ button:active {
 }
 
 /* SUBCATEGORY SIDE */
+.sub_test h1 {
+  color: #595656;
+  margin-bottom: 5%;
+  margin-left: 11%;
+  font-size: 2rem;
+  margin-top: 4%;
+}
