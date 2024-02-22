@@ -3,7 +3,7 @@
   color: #1abeae;
 }
 .card:active h2 {
-  color: red;
+  color: #108a7d;
 }
 
 .card:hover {
