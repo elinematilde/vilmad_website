@@ -2,16 +2,16 @@
   background-image: url(../img/Grid_baggrund.png);
 }
 .button_column {
-    display: grid;
-    grid-template-columns: 1fr 8fr;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
 }
 .grid_1-1 {
-    display: grd;
-    grid-template-columns: 1fr 1fr;
+  display: grd;
+  grid-template-columns: 1fr 1fr;
 }
 .ikon_grid {
-    display: grid;
-    grid-template-columns: 1fr 15fr;
+  display: grid;
+  grid-template-columns: 1fr 15fr;
 }
 .container img {
   float: left; /* Flyt billedet til venstre */
@@ -32,10 +32,10 @@
 }
 
 @media (max-width: 1100px) {
-.barcode {
-  max-height: 0%;
-  position: absolute;
-}
+  .barcode {
+    max-height: 0%;
+    position: absolute;
+  }
   article {
     display: contents;
     background-color: #f9d3e6;
@@ -46,52 +46,51 @@
   .grid_card {
     display: grid;
     grid-template-columns: 1fr;
-}
-.lokationikon {
+  }
+  .lokationikon {
     max-width: 100%;
-  position: absolute;
- 
-}
-.svampebillede {
-  max-width: 100%;
-}
-.sæsonikon {
+    position: absolute;
+  }
+  .svampebillede {
+    max-width: 100%;
+  }
+  .sæsonikon {
     max-width: 80%;
     position: absolute;
-}
+  }
 }
 @media (min-width: 1100px) {
-    .grid_card {
-        display: grid;
-        grid-template-columns: 1fr 1fr 0.8fr;
-      }
-      .barcode {
-        position: absolute;
+  .grid_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.8fr;
+  }
+  .barcode {
+    position: absolute;
     max-height: 382px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     left: 67%;
-      }
-      .idcolumn {
-        border-style: dashed;
-        border-width: 0px 0px 0px 2px;
-        border-color: white;
-    }
-    .landskabbillede {
-        max-height:10%;
-        position: 
-    }
-    .lokationikon {
-        max-width: 100%;
-      position: absolute;
-      left: 40%;
-    }
-    .sæsonikon {
-        max-width: 80%;
-        position: absolute;
-        left: 40%;
-    }
+  }
+  .idcolumn {
+    border-style: dashed;
+    border-width: 0px 0px 0px 2px;
+    border-color: white;
+  }
+  .landskabbillede {
+    max-height: 10%;
+    position: ;
+  }
+  .lokationikon {
+    max-width: 100%;
+    position: absolute;
+    left: 40%;
+  }
+  .sæsonikon {
+    max-width: 80%;
+    position: absolute;
+    left: 40%;
+  }
 }
 
 .produkth1 {
@@ -111,14 +110,14 @@
   margin-inline-end: 5%;
 }
 .divider {
-    padding:7%;
+  padding: 1.5%;
 }
 .divider2 {
-  padding:2%;
+  padding: 2%;
 }
 .systemid {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
  {
   margin: 0;
@@ -136,7 +135,7 @@ article {
   box-shadow: 5px 5px 5px 0px rgba(138, 138, 138, 0.32);
   margin-inline-start: 18%;
   margin-inline-end: 18%;
-  top
+  border-radius: 8px;
 }
 
 main {
@@ -144,8 +143,6 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: subgrid;
   grid-row: span 4;
-
-
 }
 
 article .img1 {
