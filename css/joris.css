@@ -65,6 +65,23 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
+.produktliste1 {
+  text-align: center;
+  background-color: #eecfe19f;
+  margin: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgb(130, 125, 125);
+  margin-top: 3rem;
+}
+.produktliste1 hr {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 3rem;
+  border: #b691b6b1 solid 2px;
+}
+
 .produktliste2 {
   display: grid;
   gap: 1rem;
