@@ -1,5 +1,5 @@
 body {
-  background-image: url(/img/Grid_baggrund.png);
+  background-image: url(/Grid_baggrund.png);
 }
 
 main {
@@ -50,7 +50,7 @@ p {
 
 /* DARKMODE */
 .darkMode {
-  background-image: url(/img/darkmode_baggrund.png);
+  background-image: url(/darkmode_baggrund.png);
   /* background-color: #4a4a4a;
   color: #dedede; */
   transition: opacity 0.5s ease-in-out;
