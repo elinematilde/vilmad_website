@@ -33,14 +33,3 @@ function showProduct(data) {
     console.log("June");
   }
 }
-
-function goBack() {
-  console.log("back");
-  window.history.back();
-}
-
-function darkMode() {
-  var element = document.body;
-  element.classList.toggle("darkMode");
-  console.log("dark/light");
-}

@@ -67,8 +67,3 @@ function showMushrooms(data) {
     // document.body.appendChild(link);
   });
 }
-
-function goBack() {
-  console.log("back");
-  window.history.back();
-}
