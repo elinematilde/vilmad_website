@@ -417,11 +417,3 @@ button:active {
     opacity: 1;
   }
 }
-
-main h1,
-h2,
-h4,
-div,
-p {
-  padding: 0.5rem;
-}
