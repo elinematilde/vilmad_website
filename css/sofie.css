@@ -7,6 +7,12 @@
   } */
 }
 
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +22,10 @@
 }
 
 .tekst_boks {
-  margin: 2rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   border-radius: 30px;
   border: 10px solid #fff;
   background-color: #ffff;
