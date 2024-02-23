@@ -1,5 +1,5 @@
 body {
-  background-image: url(/img/Grid_baggrund.png);
+  background-image: url(../img/Grid_baggrund.png);
 }
 
 main {
@@ -50,7 +50,7 @@ p {
 
 /* DARKMODE */
 .darkMode {
-  background-image: url(/img/darkmode_baggrund.png);
+  background-image: url(../img/darkmode_baggrund.png);
   /* background-color: #4a4a4a;
   color: #dedede; */
   transition: opacity 0.5s ease-in-out;
@@ -118,7 +118,7 @@ button:active {
   left: 0;
   width: 8rem;
   height: auto;
-  background-image: url(/img/pinkpaper.png);
+  background-image: url(../img/pinkpaper.png);
   z-index: -3;
   transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
